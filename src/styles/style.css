@@ -1,0 +1,115 @@
+@import url(./_components.css);
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--medium-color);
+	box-sizing: border-box;
+}
+
+.header-app {
+	background-color: var(--main-color);
+	height: 10vh;
+	position: sticky;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.header-app h1 {
+	margin-left: 1em;
+	color: var(--accent-color);
+    min-width: 30%;
+}
+.header-app a{
+    align-self: flex-end;
+    min-width: 30%;
+    text-decoration: none;
+    padding: 1em;
+    margin: 1em;
+    color: var(--medium-color);
+    text-transform: uppercase;
+}
+.header-app span {
+	color: var(--medium-color);
+}
+.choice {
+	width: 100%;
+	min-height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+.choice h2 {
+	font-size: 2rem;
+	color: var(--main-color);
+	text-shadow: 0px 0px 8px var(--light-color);
+}
+.choice-title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 20vh;
+	width: 100%;
+	animation: fade-in 2s;
+}
+.choice-box {
+	width: 80%;
+	min-height: 50vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: var(--light-color);
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px var(--dark-color);
+    animation: fade-up 1s;
+}
+.choice-card {
+	display: flex;
+	align-items: flex-end;
+	border: 4px solid var(--main-color);
+	border-radius: 10px;
+	width: 350px;
+	height: 350px;
+	transition: transform 0.4s;
+	cursor: pointer;
+}
+.choice-card:hover {
+	transform: scale(1.1);
+}
+
+.choice-card button {
+	width: 100%;
+	height: 30%;
+	padding: 1em;
+	border: none;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: var(--light-color);
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+
+.wedding-choice {
+	background-image: linear-gradient(
+			to bottom,
+			rgba(252, 163, 17, 0.5),
+			rgba(255, 255, 255, 0.3) 30%
+		),
+		url("https://cdn.pixabay.com/photo/2014/11/13/17/04/heart-529607_1280.jpg");
+	background-position: center;
+	background-size: cover;
+}
+.party-choice {
+	background-image: linear-gradient(
+			to bottom,
+			rgba(252, 163, 17, 0.5),
+			rgba(255, 255, 255, 0.3) 30%
+		),
+		url("https://cdn.pixabay.com/photo/2017/12/13/11/57/birthday-3016615_1280.jpg");
+	background-position: center;
+	background-size: cover;
+}
