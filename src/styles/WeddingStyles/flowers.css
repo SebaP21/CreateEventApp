@@ -1,0 +1,159 @@
+.result h3 {
+	text-transform: uppercase;
+}
+.flowers-nav {
+	display: flex;
+	align-items: center;
+	position: sticky;
+	min-height: 8vh;
+	top: 0;
+	width: 100%;
+	background-color: #f4c0af;
+	border-bottom: 1px solid black;
+}
+.flowers-nav a {
+	min-width: 50px;
+	margin: 0 auto;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+	transition: color 0.2s;
+	padding: 1em;
+}
+.flowers-nav a:hover {
+	color: white;
+}
+.flowers-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	min-height: 720px;
+	height: 100%;
+	background-color: #f4c0af;
+}
+.flowers-header h1 {
+	font-size: 3rem;
+	color: white;
+	text-shadow: 0 0 10px black;
+}
+.flowers-header p {
+	text-align: center;
+	padding: 1em;
+}
+.flowers-header button {
+	background-color: transparent;
+	border: none;
+	transition: transform 0.3s;
+}
+.flowers-header button:hover {
+	transform: scale(1.1);
+}
+.flowers-picture {
+	margin-top: 2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("https://png.pngtree.com/png-clipart/20230710/ourmid/pngtree-flowers-png-image_7506581.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	min-width: 400px;
+	min-height: 200px;
+	width: 100%;
+	height: 100%;
+}
+.arrow-down {
+	font-size: 2rem;
+}
+section .flowers-about {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #fff;
+}
+.flowers-our-story {
+	margin: 2em 0;
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	min-height: 100%;
+	text-align: center;
+}
+.our-picture-flowers {
+	margin: 1em 0;
+	width: 80%;
+	min-height: 500px;
+	background-image: url("https://cdn.pixabay.com/photo/2021/06/05/17/20/people-6313293_1280.jpg");
+	background-position: center;
+	background-size: cover;
+	border: 5px solid #f4c0af;
+}
+section .wedding-party-time {
+	background-color: #f4c0af;
+	min-height: 500px;
+	padding: 1em 0;
+}
+.wedding-time {
+	padding: 1em 0;
+	text-align: center;
+}
+section .flowers-accomodation {
+	width: 90%;
+	margin: 0em auto;
+	text-align: center;
+	padding: 2em 2em;
+	background-color: #fff;
+}
+section .flowers-witnesses {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	min-height: 500px;
+	text-align: center;
+	background-color: #f4c0af;
+}
+.flowers-witness-wraper {
+	margin: 0 auto;
+	width: 90%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: white;
+	border-radius: 10px;
+	padding: 1em;
+}
+.flowers-witness {
+	max-width: 40%;
+
+	overflow: hidden;
+}
+.flowers-witness img {
+	max-width: 80%;
+	max-height: 60%;
+	border-radius: 50%;
+}
+section .flowers-contact{
+	width: 100%;
+	display: flex;
+	min-height: 1000px;
+	justify-content: space-evenly;
+}
+.flowers-contact-items{
+	padding: 2em 0;
+	max-width: 70%;
+	min-height: 100%;
+	text-align: center;
+	background-color: #fff;
+}
+.flowers-contact-picture{
+	background-image: url("https://cdn.pixabay.com/photo/2016/10/28/21/16/couple-1779066_640.jpg");
+	width: 100%;
+	min-height: 500px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}

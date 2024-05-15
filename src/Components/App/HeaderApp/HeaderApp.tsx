@@ -1,11 +1,15 @@
+import { Link } from "react-router-dom";
+
 export const HeaderApp = () => {
 	return (
 		<section className='header-app'>
-			<h1>
-				Create<span>Your</span>Page
-			</h1>
-			<a href=''>Konfigurator ślubny</a>
-			<a href=''>Konfigurator innych wydarzeń</a>
+			<Link to='/'>
+				<h1>
+					Create<span>Your</span>Page
+				</h1>
+			</Link>
+			<Link to='/wedding'>Konfigurator ślubny</Link>
+			<Link to='party'>Inne Wydarzenia</Link>
 		</section>
 	);
 };

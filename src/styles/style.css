@@ -6,6 +6,13 @@ body {
 	background-color: var(--medium-color);
 	box-sizing: border-box;
 }
+.section{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
 
 .header-app {
 	background-color: var(--main-color);
@@ -15,19 +22,19 @@ body {
 	display: flex;
 	align-items: center;
 }
-.header-app h1 {
-	margin-left: 1em;
-	color: var(--accent-color);
-    min-width: 30%;
+.header-app a {
+	min-width: 30%;
+	text-decoration: none;
+	padding: 1em;
+	/* margin: 1em; */
+	color: var(--medium-color);
+	text-transform: uppercase;
+	font-weight: bold;
 }
-.header-app a{
-    align-self: flex-end;
-    min-width: 30%;
-    text-decoration: none;
-    padding: 1em;
-    margin: 1em;
-    color: var(--medium-color);
-    text-transform: uppercase;
+.header-app h1 {
+	color: var(--accent-color);
+	min-width: 30%;
+	align-self: auto;
 }
 .header-app span {
 	color: var(--medium-color);
@@ -59,11 +66,12 @@ body {
 	min-height: 50vh;
 	display: flex;
 	justify-content: space-evenly;
+	flex-wrap: wrap;
 	align-items: center;
 	background-color: var(--light-color);
 	border-radius: 10px;
 	box-shadow: 0px 0px 10px var(--dark-color);
-    animation: fade-up 1s;
+	animation: fade-up 1s;
 }
 .choice-card {
 	display: flex;
@@ -112,4 +120,58 @@ body {
 		url("https://cdn.pixabay.com/photo/2017/12/13/11/57/birthday-3016615_1280.jpg");
 	background-position: center;
 	background-size: cover;
+}
+.select-template-box{
+	display: flex;
+	width: 80%;
+	justify-content: space-evenly;
+}
+.select-template-card{
+	border: 1px solid var(--main-color);
+	width: 30%;
+	height: 50vh;
+}
+.select-template-card button{
+	width: 100%;
+	height: 20%;
+	border: none;
+}
+.template-preview{
+	height: 80%;
+}
+.setup{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	min-height: 80vh;
+	padding: 1em;
+}
+.creator-setup{
+	min-width: 50%;
+	min-height: 100%;
+}
+.result{
+	/* margin-top: 2em; */
+	display: flex;
+	flex-direction: column;
+	min-width: 40%;
+	max-width: 40%;
+	min-height: 80vh;
+	max-height: 80vh;
+	border: 1px solid var(--main-color);
+	border-radius: 8px;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+.result::-webkit-scrollbar{
+	background-color:transparent;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-left: 1px solid black;
+}
+.result::-webkit-scrollbar-thumb{
+	background-color: var(--main-color);
+	border: none;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
 }
