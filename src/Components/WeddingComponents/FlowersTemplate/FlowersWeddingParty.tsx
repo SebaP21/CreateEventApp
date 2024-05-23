@@ -1,6 +1,8 @@
+import { FC } from "react";
 import "../../../styles/WeddingStyles/flowers.css";
+import { detailsDataProps } from "../../App/CeremonyDateCreator/DateCreator";
 
-export const WeddingPartyTime = () => {
+export const WeddingPartyTime = ({date,place}:any) => {
 	return (
 		<section className='section wedding-party-time'>
 			<div className='wedding-time'>
@@ -10,9 +12,11 @@ export const WeddingPartyTime = () => {
 				/>
 				<h3>Uroczystość ślubu</h3>
 				<h5>Kiedy?</h5>
-				<p>20.10.2050r</p>
+				<p>{date}</p>
 				<h5>Gdzie?</h5>
-				<p>Kozia Wólka 1500100900</p>
+				<p>{place.city}</p>
+				<p>{place.street}</p>
+				<p>{place.adress}</p>
 			</div>
 		</section>
 	);

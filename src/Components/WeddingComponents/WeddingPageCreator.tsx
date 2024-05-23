@@ -2,6 +2,8 @@ import { useState } from "react";
 import { HeaderApp } from "../App/HeaderApp/HeaderApp";
 import { WeddingHeader } from "./WeddingHeader";
 import { HeadingCreator } from "../App/HeadingCreator/HeadCreator";
+import { AboutCreator } from "../App/AboutCreator/AboutCreator";
+import { DateCreator } from "../App/CeremonyDateCreator/DateCreator";
 
 export const WeddingPageCreator = () => {
 	const [templateSelect, setTemplateSelect] = useState("");
@@ -31,7 +33,7 @@ export const WeddingPageCreator = () => {
 					</div>
 				</section>
 			)}
-			{templateSelect === "flowers" && <HeadingCreator/>}
+			{templateSelect === "flowers" && <><HeadingCreator/> <AboutCreator/> <DateCreator/></>}
 		</>
 	);
 };
